@@ -1,13 +1,12 @@
-let a : number[] = [1,2,3,4,5,6,7,8,9];
-let aDoubled: number[] = a.map(n => n * 2);
-console.log(aDoubled);
+let numbers : number[] = [1,2,3,4,5,6,7,8,9];
+let doubledNumbers: number[] = numbers.map(n => n * 2);
+console.log(doubledNumbers);
 
-let b : string[] = ['number','string','null','anotherLongWord','one','two','fifteen'];
-console.log(b.filter(n => n.length > 5));
+let strings : string[] = ['number','string','null','anotherLongWord','one','two','fifteen'];
+console.log(strings.filter(n => n.length > 5));
 
-console.log(a.reduce((n1,n2)=> n1 + n2));
-
-console.log(a.some(n => n > 10));
+console.log(numbers.reduce((n1, n2)=> n1 + n2));
+console.log(numbers.some(n => n > 10));
 
 // Bonus task
 
